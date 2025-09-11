@@ -30,7 +30,7 @@ export default function Page() {
         <div className="flex items-end justify-between mb-6">
           <h2 className="text-2xl font-bold">Featured Projects</h2>
           <a
-            href={`https://github.com/${SITE.githubUser}?tab=repositories`}
+            href={`https://github.com/stars/laithse1/lists/my-projects`}
             className="text-sm hover:text-brand"
             target="_blank"
             rel="noopener noreferrer"

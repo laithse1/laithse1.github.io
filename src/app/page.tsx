@@ -89,6 +89,8 @@ export default function Page() {
             <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
               Outside of work, I enjoy wrenching on Mercedes and BMWs, tackling everything from diagnostics and
               preventative maintenance to repairs and OEM-plus upgrades.
+              
+              Not a certified mechanic by any means 😅 — just a Mercedes & BMW enthusiast who enjoys diagnostics, maintenance, repairs, and OEM+ upgrades in my spare time.
             </p>
             <div className="mt-3 flex flex-wrap gap-2 text-xs">
               <span className="px-2 py-1 rounded-full border">Mercedes-Benz</span>

@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark light;   /* prefer dark first */
+}
+html { scroll-behavior: smooth; }
+
+/* hide horizontal scrollbar for the slider */
+.scrollbar-hide::-webkit-scrollbar{ display:none; }
+.scrollbar-hide{ -ms-overflow-style:none; scrollbar-width:none; }
+

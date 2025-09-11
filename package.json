@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export -o out",
+    "build": "next build ",
     "start": "next start",
     "preview:static": "npx serve -s out -l 4173"
   },

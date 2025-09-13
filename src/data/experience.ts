@@ -25,10 +25,12 @@ export const EXPERIENCE = [
     company: 'Georgia Institute of Technology — (Machine Learning & Artificial Intelligence)',
     role: 'Graduate Student ',
     period: 'Aug 2024 — Present',
-    bullets: [
-      'Built production‑grade test suites, CI, and ML prototypes.',
-      'Delivered research-style reports, visualizations, and reproducible pipelines.'
-    ]
+bullets: [
+  'Developed production-grade test suites and CI pipelines to ensure reliability and scalability of ML systems.',
+  'Built and evaluated machine learning prototypes, applying supervised/unsupervised methods, time-series models, and clustering techniques.',
+  'Authored research-style reports and technical visualizations, translating complex results into actionable insights.',
+  'Delivered reproducible ML workflows using Python, NumPy, pandas, and scikit-learn to support experimentation and validation.'
+]
   },
 
   { company: 'FedEx — Enterprise Document Management',

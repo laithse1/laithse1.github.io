@@ -1,56 +1,47 @@
 # Laith Alkhalil — Portfolio (Next.js + Tailwind)
 
-Modern, static-exportable Next.js site ready for **GitHub Pages** + **Docker**.
+A professional, technical portfolio for a **Full-Stack Software Engineer**.
+Showcases projects, experience, skills, and a **“Life Beyond Code”** gallery — built to be **fast**, **accessible**, and **easy to maintain**, with hands-off **CI/CD** via **GitHub Pages**.
 
-## Quick start
+**Live:** [https://laithse1.github.io](https://laithse1.github.io)
 
-```bash
-npm i
-npm run dev
-# open http://localhost:3000
-```
+---
 
-## Build static & preview
+## ✨ Highlights
 
-```bash
-npm run build
-npm run preview:static
-# open http://localhost:4173
-```
+* **Modern stack:** Next.js (App Router) + Tailwind CSS
+* **Design:** Dark-first UI, grid overlay, glowing accents, responsive layout
+* **Content-first:** All data lives in small TypeScript files (`/src/data/*`)
+* **Images:** Drop into `/public/images` and reference in `src/data/gallery.ts`
+* **Performance:** Fully static export → instant page loads on GitHub Pages
+* **CI/CD:** GitHub Actions builds and deploys on every push to `master`
+* **Docker:** Multi-stage build; Nginx serves the static export locally or in a container
 
-## Docker (local)
+---
 
-```bash
-docker build -t laith-site .
-docker run -p 8080:80 laith-site
-# open http://localhost:8080
-```
+## 🧰 Tech Stack
 
-Or:
+* **Next.js 14** (App Router) with `output: 'export'` for static builds
+* **Tailwind CSS 3** for utility-first styling
+* **TypeScript** for safety and clarity
+* **GitHub Actions** for build+deploy
+* **Docker / Nginx** for local container preview
 
-```bash
-docker compose up --build
-# open http://localhost:8080
-```
+---
 
-## Deploy to GitHub Pages
+## 📬 Contact
 
-1. Create a public repo (ideally `<your-username>.github.io` for user site).
-2. Push this code to the `main` branch.
-3. In repo **Settings → Pages**, set **Source = GitHub Actions**.
-4. Push to `main` again; workflow builds and deploys `/out` to Pages.
+* **GitHub:** [https://github.com/laithse1](https://github.com/laithse1)
+* **LinkedIn:** [https://www.linkedin.com/in/laith-alkhalil/](https://www.linkedin.com/in/laith-alkhalil/)
 
-> For a project site (not user root), you may need a `basePath`.> See `next.config.mjs` if hosting under `/<repo>` instead of root.
+---
 
-## Personalization
+## 🙏 Acknowledgments
 
-- Replace links/usernames in: `src/data/site.config.ts`, `src/data/projects.ts`.
-- Swap placeholder images in `public/images/*`.
-- Replace `public/resume.pdf` with your real resume.
+Design inspiration from modern personal sites and developer portfolios; thanks to the **Next.js** and **Tailwind** communities for patterns and utilities.
 
-## Tech
+---
 
-- Next.js App Router, Tailwind CSS
-- Static export (`next export`) → great for GitHub Pages
-- Docker multi-stage build → Nginx serves the static export
-- GitHub Actions → build & deploy on push to `main`
+## 📝 License
+
+**MIT** — feel free to fork, adapt, and use as a starter for your own portfolio.

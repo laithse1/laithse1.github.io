@@ -1,11 +1,10 @@
-Nice—here’s a complete, production-ready **Next.js + Tailwind** portfolio that matches the style we discussed, includes your “Beyond Code” section, and supports:
+ production-ready **Next.js + Tailwind** portfolio.
 
 * static export for **GitHub Pages**
 * a **Docker** multi-stage build (serves the static site via Nginx)
 * a **docker-compose** for quick local testing
-* a **GitHub Actions** workflow that builds & deploys to Pages on push to `main`
+* a **GitHub Actions** workflow that builds & deploys to Pages on push to `master`
 
-**Download the project:** [laith-portfolio-next.zip](sandbox:/mnt/data/laith-portfolio-next.zip)
 
 ### What’s included
 
@@ -23,7 +22,7 @@ Nice—here’s a complete, production-ready **Next.js + Tailwind** portfolio th
   * `githubUser: '<your-username>'`
   * `linkedin` and `email`
 * Update `src/data/projects.ts` with your real repo links (DICOM Converter, InfinityView, PD app, etc.).
-* Replace `public/resume.pdf` with your real resume.
+* Replace `public/resume.pdf` with real resume.
 * Drop real photos into `public/images/` (W210, E39, homelab, etc.) or remove those cards.
 
 ### Run locally
@@ -64,6 +63,48 @@ docker compose up --build
 3. In **Settings → Pages**, set **Source = GitHub Actions**.
 4. Push again (or run the workflow); it will build & publish `/out`.
 
-> Hosting under a project path (e.g., `/my-portfolio`)? Tell me and I’ll switch `next.config.mjs` to include a `basePath` for that repo.
+> Hosting under a project path (e.g., `/my-portfolio`)
 
-Want me to bake in your exact GitHub username, LinkedIn, and the real project URLs now? Share those handles and I’ll regenerate the project with everything wired up.
+
+
+Modern, static-exportable Next.js site ready for **GitHub Pages** + **Docker**.
+
+## Quick start
+
+```bash
+npm i
+npm run dev
+# open http://localhost:3000
+```
+
+## Build static & preview
+
+```bash
+npm run build
+npm run preview:static
+# open http://localhost:4173
+```
+
+## Docker (local)
+
+```bash
+docker build -t laith-site .
+docker run -p 8080:80 laith-site
+# open http://localhost:8080
+```
+
+Or:
+
+```bash
+docker compose up --build
+# open http://localhost:8080
+```
+
+## Deploy to GitHub Pages
+
+1. Create a public repo (ideally `<your-username>.github.io` for user site).
+2. Push this code to the `main` branch.
+3. In repo **Settings → Pages**, set **Source = GitHub Actions**.
+4. Push to `main` again; workflow builds and deploys `/out` to Pages.
+
+> For a project site (not user root), you may need a `basePath`.> See `next.config.mjs` if hosting under `/<repo>` instead of root.

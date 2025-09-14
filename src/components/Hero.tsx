@@ -18,8 +18,8 @@ export default function Hero() {
             with deep experience in healthcare imaging, DICOM/DICOMWeb, and OHIF.
           </p>*/}
           <div className="mt-6 flex flex-wrap gap-3">
-            <a href="#projects" className="px-5 py-2.5 rounded-xl bg-brand text-white hover:bg-brand/90">View Projects</a>
-            <a href="#beyond" className="px-5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700">Beyond Code</a>
+           {/*} <a href="#projects" className="px-5 py-2.5 rounded-xl bg-brand text-white hover:bg-brand/90">View Projects</a>
+            <a href="#beyond" className="px-5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700">Beyond Code</a>*/}
             {/*<a href={`mailto:${SITE.email}`} className="px-5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700">Email Me</a>*/}
           </div>
         </div>

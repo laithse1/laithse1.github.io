@@ -31,8 +31,8 @@ Showcases projects, experience, skills, and a **“Life Beyond Code”** gallery
 
 ## 📬 Contact
 
-* **GitHub:** [https://github.com/laithse1](https://github.com/laithse1)
-* **LinkedIn:** [https://www.linkedin.com/in/laith-alkhalil/](https://www.linkedin.com/in/laith-alkhalil/)
+* **GitHub:** [Github](https://github.com/laithse1)
+* **LinkedIn:** [Laith Alkhalil](https://www.linkedin.com/in/laith-alkhalil-alhamed-6aa15a82/)
 
 ---
 

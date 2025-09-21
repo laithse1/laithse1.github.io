@@ -129,14 +129,14 @@ export default function Page() {
             </a>
 
             {/* Resume */}
-            <a
+           {/* <a
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700"
             >
               Download Resume
-            </a>
+            </a>*/}
 
             {/* GitHub */}
             <a

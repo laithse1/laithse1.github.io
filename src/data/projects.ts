@@ -11,7 +11,7 @@ export const PROJECTS = [
     desc: "The Pokemon Tournament App is a Java Spring Boot application designed to simulate Pokemon tournaments with customizable configurations. It includes both frontend and backend components, with a PostgreSQL database for data persistence. This project is containerized using Docker, allowing easy setup and execution.",
     impact: "Demonstrated full-stack engineering by integrating Spring Boot, React, and PostgreSQL; applied software engineering best practices in containerization, configuration management, and simulation design.",
     tags: ['Spring Boot','SQL Server','OAuth2/JWT','Docker','PostgreSQL','React'],
-    link: 'https://github.com/laithse1/infinityview'
+    link: 'https://github.com/laithse1/PokemonTournament-SpringBoot-Application'
   },
   {
     title: 'Peritoneal Dialysis Management',

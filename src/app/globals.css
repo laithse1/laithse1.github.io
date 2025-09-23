@@ -9,3 +9,7 @@ html { scroll-behavior: smooth; }
 .scrollbar-hide::-webkit-scrollbar{ display:none; }
 .scrollbar-hide{ -ms-overflow-style:none; scrollbar-width:none; }
 
+/* Style links only inside the experience section */
+#experience a {
+  @apply text-brand hover:underline; /* Tailwind utility */
+}

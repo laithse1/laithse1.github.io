@@ -6,7 +6,7 @@ export const EXPERIENCE = [
     bullets: [
       'Strengthened Enterprise Security: Integrated the Image Move (iMove) system with Azure SSO (OAuth2) and Microsoft Graph API, enhancing authentication and authorization.',
 
-      'Hardened security posture by mitigating CWE-73 vulnerabilities and implementing standardized, secure logging pipelines into Splunk.',
+      'Developed PathSafe utility as a defensive layer that validates file inputs, enforces allow-lists, normalizes paths, and guarantees directory containment, fully mitigating <a href="https://cwe.mitre.org/data/definitions/73.html" target="_blank" rel="noopener noreferrer">CWE-73 external path control vulnerabilities</a> and reducing flaw count from 562 to zero.',
 
       'Built resilient CI/CD pipelines for multi-VM deployments, ensuring repeatable and scalable releases across environments.',
 
@@ -40,7 +40,7 @@ bullets: [
       'Enabled Cloud Cost Savings: Engineered Java Spring Boot REST APIs for Google Cloud Storage, driving enterprise backend migration to GCP and achieving $2M/year in savings.',
       'Secured Enterprise Systems: Implemented Okta token-based authentication to harden backend services and ensure compliance with enterprise security standards.',
       'Boosted System Performance: Built high-performance, highly available distributed systems, optimizing Cassandra NoSQL queries to significantly improve response times.',
-      'Delivered AI-Powered Imaging Solutions: Designed and deployed image processing APIs with Google Cloud Vision for automated detection and blurring of sensitive content — powering the launch of Picture Proof of Delivery project.',
+      'Delivered AI-Powered Imaging Solutions: Designed and deployed image processing APIs with Google Cloud Vision for automated detection and blurring of sensitive content — powering the launch of <a href="https://www.fedex.com/en-us/tracking/picture-proof-delivery.html" target="_blank" rel="noopener noreferrer">Picture Proof of Delivery project</a>.',
       'Led Agile Modernization: Served as Scrum Master, driving legacy system modernization while mentoring contract developers to deliver scalable, high-quality solutions.',
       'Ensured Operational Reliability: Monitored production and test systems proactively, ensuring uptime and rapid resolution of critical issues.'
     ]
@@ -57,3 +57,4 @@ bullets: [
     ]
   }
 ] as const;
+

@@ -4,7 +4,7 @@ export const PROJECTS = [
     desc: 'A full-stack healthcare imaging platform that ingests DICOM datasets from MIME bundles, validates and anonymizes them, logs pre/post headers for audit, and exposes DICOMweb endpoints for OHIF. Built with Python/FastAPI, PostgreSQL (relational + JSONB), and Next.js + Chakra UI, fully containerized with Docker for reproducible dev, test, and prod deployments.',
     impact: 'Demonstrated end-to-end engineering of a production-grade medical imaging pipeline — including DICOMweb compliance, OHIF integration, audit-ready anonymization, and DevOps best practices. Delivered a scalable, secure, and portable solution that bridges backend services, database design, and modern UI, highlighting expertise in cloud-native architectures, healthcare interoperability, and full-stack development.',
     tags: ['Python-FastAPI','pydicom','React/Next.js','Docker','PostgreSQL'],
-    link: 'https://github.com/laithse1/DICOM-converter-API'
+    link: 'https://github.com/laithse1/DICOM-Toolkit-App-Backend'
   },
   {
     title: 'The Pokemon Tournament App',

@@ -3,7 +3,7 @@
 A professional, technical portfolio for a **Full-Stack Software Engineer**.
 Showcases projects, experience, skills, and a **“Life Beyond Code”** gallery — built to be **fast**, **accessible**, and **easy to maintain**, with hands-off **CI/CD** via **GitHub Pages**.
 
-**Live:** [https://laithse1.github.io](https://laithse1.github.io)
+**Live:** [https://laithse1.github.io/](https://laithse1.github.io/)
 
 ---
 

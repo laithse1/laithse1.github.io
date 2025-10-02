@@ -25,7 +25,7 @@ export const EXPERIENCE = [
 
       'Integrated with enterprise monitoring and observability (AppDynamics + Splunk), enabling proactive performance tracking and faster root cause analysis.',
 
-      'Led and Engineered API management platform migration strategies, such as moving clinical viewer services to ApigeeX platfrom with a backward-compatible resolution layer, ensuring zero downtime cutovers and improved credential reliability.',
+      'Led and Engineered API management platform migration strategies, such as moving clinical viewer services to the <a href="https://cloud.google.com/apigee?hl=en" target="_blank" rel="noopener noreferrer">Apigee API management platform</a> with a backward-compatible resolution layer, ensuring zero downtime cutovers and improved credential reliability.',
 
       'Centralized Knowledge Management: Designed and developed an internal knowledge base website (HTML, JavaScript, CSS, Nginx), reducing incident resolution time by 40%.',
 
@@ -51,9 +51,9 @@ bullets: [
     period: 'Jan 2022 – Jan 2024',
     bullets: [
       'Enabled Cloud Cost Savings: Engineered Java Spring Boot REST APIs for Google Cloud Storage, driving enterprise backend migration to GCP and achieving $2M/year in savings.',
-      'Secured Enterprise Systems: Implemented Okta token-based authentication to harden backend services and ensure compliance with enterprise security standards.',
+      'Secured Enterprise Systems: Implemented <a href="https://developer.okta.com/docs/guides/customize-tokens-groups-claim/main/" target="_blank" rel="noopener noreferrer">Okta</a> token-based authentication to harden backend services and ensure compliance with enterprise security standards.',
       'Boosted System Performance: Built high-performance, highly available distributed systems, optimizing Cassandra NoSQL queries to significantly improve response times.',
-      'Delivered AI-Powered Imaging Solutions: Designed and deployed image processing APIs with Google Cloud Vision for automated detection and blurring of sensitive content — powering the launch of <a href="https://www.fedex.com/en-us/tracking/picture-proof-delivery.html" target="_blank" rel="noopener noreferrer">Picture Proof of Delivery project</a>.',
+      'Delivered AI-Powered Imaging Solutions: Designed and deployed image processing APIs using <a href="https://cloud.google.com/vision/docs/detecting-safe-search?_gl=1*1rgmiia*_up*MQ..&gclid=CjwKCAjwxfjGBhAUEiwAKWPwDlquexMphOsdSKtBzUmZ5FBtfx-A0i4o_8MAzgCyN--oU2mR6szUFBoCEEoQAvD_BwE&gclsrc=aw.ds#explicit_content_detection_on_a_local_image" target="_blank" rel="noopener noreferrer">Google Cloud Vision</a> for automated detection and blurring of sensitive content — powering the launch of <a href="https://www.fedex.com/en-us/tracking/picture-proof-delivery.html" target="_blank" rel="noopener noreferrer">Picture Proof of Delivery project</a>.',
       'Led Agile Modernization: Served as Scrum Master, driving legacy system modernization while mentoring contract developers to deliver scalable, high-quality solutions.',
       'Ensured Operational Reliability: Monitored production and test systems proactively, ensuring uptime and rapid resolution of critical issues.'
     ]

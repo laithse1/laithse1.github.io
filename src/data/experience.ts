@@ -1,8 +1,21 @@
 export const EXPERIENCE = [
+    {
+    company: 'Mayo Clinic — Clinical Imaging Solutions',
+    role: 'Software Engineer',
+    period: 'Oct 2025 — Present',
+    bullets: [
+  'Develop and maintain the clinical image viewer system, enabling fast, secure, and reliable access to diagnostic imaging across Mayo Clinic.',
+  'Build and optimize back-end services with Java Spring Boot, ensuring resiliency, scalability, and uptime in a Linux-based environment.',
+  'Design and enhance React-based front-end components for an intuitive and performant user experience.',
+  'Implement and manage CI/CD pipelines in Azure DevOps, driving continuous integration, automated testing, and streamlined deployments.',
+  'Collaborate with Product Owners, Architects, and cross-functional teams to translate clinical and operational requirements into robust technical solutions.',
+  'Contribute to product discovery sessions and technical strategy, ensuring alignment with Mayo Clinic’s long-term innovation goals.'
+]
+  },
   {
     company: 'Mayo Clinic — Enterprise Imaging Systems',
     role: 'IT Analyst Programmer / Full‑Stack Developer',
-    period: 'Jan 2024 — Present',
+    period: 'Jan 2024 — Oct 2025',
     bullets: [
       'Strengthened Enterprise Security: Integrated the Image Move (iMove) system with Azure SSO (OAuth2) and Microsoft Graph API, enhancing authentication and authorization.',
 

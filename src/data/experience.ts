@@ -15,7 +15,7 @@ export const EXPERIENCE = [
   {
     company: 'Mayo Clinic — Enterprise Imaging Systems',
     role: 'IT Analyst Programmer / Full‑Stack Developer',
-    period: 'Jan 2024 — Oct 2025',
+    period: 'Jan 2024 — Sept 2025',
     bullets: [
       'Strengthened Enterprise Security: Integrated the Image Move (iMove) system with Azure SSO (OAuth2) and Microsoft Graph API, enhancing authentication and authorization.',
 

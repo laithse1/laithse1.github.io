@@ -17,21 +17,14 @@ export const EXPERIENCE = [
     role: 'IT Analyst Programmer / Full‑Stack Developer',
     period: 'Jan 2024 — Sept 2025',
     bullets: [
-      'Strengthened Enterprise Security: Integrated the Image Move (iMove) system with Azure SSO (OAuth2) and Microsoft Graph API, enhancing authentication and authorization.',
-
-      'Developed PathSafe utility as a defensive layer that validates file inputs, enforces allow-lists, normalizes paths, and guarantees directory containment, fully mitigating <a href="https://cwe.mitre.org/data/definitions/73.html" target="_blank" rel="noopener noreferrer">CWE-73 external path control vulnerabilities</a> and reducing flaw count from 562 to zero.',
-
-      'Built resilient CI/CD pipelines for multi-VM deployments, ensuring repeatable and scalable releases across environments.',
-
-      'Integrated with enterprise monitoring and observability (AppDynamics + Splunk), enabling proactive performance tracking and faster root cause analysis.',
-
-      'Led and Engineered API management platform migration strategies, such as moving clinical viewer services to the <a href="https://cloud.google.com/apigee?hl=en" target="_blank" rel="noopener noreferrer">Apigee API management platform</a> with a backward-compatible resolution layer, ensuring zero downtime cutovers and improved credential reliability.',
-
-      'Centralized Knowledge Management: Designed and developed an internal knowledge base website (HTML, JavaScript, CSS, Nginx), reducing incident resolution time by 40%.',
-
-      'Boosted Operational Efficiency: Built Bash shell scripts in Linux environments to automate workflows and data corrections, streamlining processes and saving developer time.',
-
-      'Collaborated in Agile/Scrum teams to deliver features, resolve production issues through ServiceNow, and drive continuous improvement across enterprise-scale solutions.'
+  'Strengthened enterprise security by integrating the Image Move (iMove) system with Azure SSO (OAuth2) and Microsoft Graph API, enhancing authentication and authorization.',
+  'Developed the PathSafe utility to validate file inputs, enforce allow-lists, normalize paths, and ensure directory containment—fully mitigating <a href="https://cwe.mitre.org/data/definitions/73.html" target="_blank" rel="noopener noreferrer">CWE-73 external path control vulnerabilities</a> and reducing flaw count from 562 to 0.',
+  'Engineered robust CI/CD pipelines for multi-VM deployments, ensuring scalable, repeatable releases across environments.',
+  'Integrated AppDynamics and Splunk to improve observability, performance monitoring, and root-cause analysis.',
+  'Led migration of clinical viewer services to the <a href="https://cloud.google.com/apigee?hl=en" target="_blank" rel="noopener noreferrer">Apigee API Management platform</a>, implementing backward-compatible routing for zero-downtime cutovers and enhanced credential reliability.',
+  'Designed and deployed an internal knowledge-base website (HTML, JavaScript, CSS, Nginx), reducing incident resolution time by 40%.',
+  'Automated workflows and data corrections using Bash scripting in Linux, streamlining operations and saving developer hours.',
+  'Collaborated within Agile/Scrum teams to deliver new features, resolve production issues via ServiceNow, and drive continuous improvement across enterprise systems.'
     ]
   },
   {

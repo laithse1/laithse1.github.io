@@ -1,6 +1,6 @@
 export const EXPERIENCE = [
     {
-    company: 'Mayo Clinic — Clinical Imaging Solutions',
+    company: 'Mayo Clinic — Clinical Imaging Systems',
     role: 'Software Engineer',
     period: 'Oct 2025 — Present',
     bullets: [

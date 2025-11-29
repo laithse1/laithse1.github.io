@@ -5,5 +5,5 @@ export const SKILLS: Record<string, string[]> = {
   'Imaging & Healthcare': ['DICOM/DICOMWeb','OHIF viewer','FHIR (basics)'],
   'Security': ['OAuth2','JWT','TLS','Secure logging'],
   'Monitoring': ['Splunk','AppDynamics','Grafana','ServiceNow'],
-  'Cloud/DevOps': ['CI/CD','Azure','Azure DevOps Pipelines','Docker','Jenkins','GCP','Linux','Nginx']
+  'Cloud/DevOps': ['Terraform','CI/CD','Azure','Azure DevOps','Docker','Jenkins','GCP','Linux','Nginx']
 };

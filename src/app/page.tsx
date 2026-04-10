@@ -8,6 +8,7 @@ import { EXPERIENCE } from '../data/experience'
 import { SKILLS } from '../data/skills'
 import { SITE } from '../data/site.config'
 import { GALLERY } from '../data/gallery'
+import { RESEARCH_PROJECT, RESEARCH_PUBLICATION } from '../data/research'
 import QuadAutoGallery from '../components/QuadAutoGallery'
 
 // Distribute the flat GALLERY into 4 columns (round-robin), copying each item
@@ -42,6 +43,80 @@ export default function Page() {
           {PROJECTS.map((p, i) => (
             <ProjectCard key={i} p={p as any} />
           ))}
+        </div>
+      </section>
+
+      <section className="max-w-6xl mx-auto px-4 py-12">
+        <div className="relative overflow-hidden rounded-[2rem] border border-slate-200/70 bg-white/85 shadow-[0_30px_120px_-50px_rgba(37,99,235,0.45)] dark:border-slate-800/80 dark:bg-slate-900/65">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(59,130,246,0.18),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(16,185,129,0.16),transparent_28%)]" />
+          <div className="relative grid gap-8 px-6 py-8 md:grid-cols-[1.2fr_0.8fr] md:px-10 md:py-10">
+            <div>
+              <div className="inline-flex items-center rounded-full border border-brand/25 bg-brand/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-brand">
+                Research
+              </div>
+              <h2 className="mt-4 max-w-2xl text-3xl font-bold tracking-tight md:text-4xl">
+                Research portfolio built for PhD outreach
+              </h2>
+              <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600 dark:text-slate-300 md:text-base">
+                My current research project centers on kinship verification, reproducible experimentation, and
+                dataset-centered evaluation, while my broader PhD interests remain open across software engineering and
+                computer science. The toolkit and manuscript below are designed to be easy to share with faculty
+                evaluating research fit, technical depth, and long-term potential.
+              </p>
+
+              <div className="mt-6 flex flex-wrap gap-3">
+                <a
+                  href="/research"
+                  className="rounded-xl bg-brand px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-brand/90"
+                >
+                  Explore research page
+                </a>
+                <a
+                  href={RESEARCH_PUBLICATION.pdfUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-xl border border-slate-300 px-5 py-2.5 text-sm font-semibold hover:border-brand/60 dark:border-slate-700"
+                >
+                  Open paper draft
+                </a>
+              </div>
+            </div>
+
+            <div className="grid gap-4">
+              <div className="rounded-[1.6rem] border border-slate-200/70 bg-white/90 p-5 shadow-sm dark:border-slate-800/70 dark:bg-slate-950/70">
+                <div className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+                  Featured manuscript
+                </div>
+                <div className="mt-3 text-xl font-semibold tracking-tight">
+                  {RESEARCH_PUBLICATION.title}
+                </div>
+                <p className="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                  {RESEARCH_PUBLICATION.summary}
+                </p>
+              </div>
+
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div className="rounded-[1.6rem] border border-slate-200/70 bg-slate-50/90 p-5 dark:border-slate-800/70 dark:bg-slate-950/60">
+                  <div className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+                    Research project
+                  </div>
+                  <div className="mt-2 font-semibold">{RESEARCH_PROJECT.title}</div>
+                  <p className="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                    Unified experimentation across classical, metric-learning, deep, and gated pairwise models.
+                  </p>
+                </div>
+                <div className="rounded-[1.6rem] border border-slate-200/70 bg-slate-50/90 p-5 dark:border-slate-800/70 dark:bg-slate-950/60">
+                  <div className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+                    Why it matters
+                  </div>
+                  <p className="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-300">
+                    The work is positioned for PhD outreach: reproducible code, clear problem framing, and a manuscript
+                    professors can review quickly.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

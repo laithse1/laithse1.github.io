@@ -4,6 +4,7 @@
 
 :root {color-scheme: dark light;   /* prefer dark first */}
 html { scroll-behavior: smooth; }
+body { overflow-x: hidden; }
 
 /* hide horizontal scrollbar for the slider */
 .scrollbar-hide::-webkit-scrollbar{ display:none; }
@@ -12,4 +13,22 @@ html { scroll-behavior: smooth; }
 /* Style links only inside the experience section */
 #experience a {
   @apply text-brand hover:underline; /* Tailwind utility */
+}
+
+@keyframes research-float {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -14px, 0); }
+}
+
+@keyframes research-pulse {
+  0%, 100% { opacity: 0.45; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.06); }
+}
+
+.research-float {
+  animation: research-float 9s ease-in-out infinite;
+}
+
+.research-pulse {
+  animation: research-pulse 7s ease-in-out infinite;
 }

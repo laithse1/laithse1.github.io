@@ -1,13 +1,24 @@
 'use client'
 import { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
+
+const NAV_ITEMS = [
+  { label: 'Projects', href: '/#projects' },
+  { label: 'Research', href: '/research' },
+  { label: 'Experience', href: '/#experience' },
+  { label: 'Skills', href: '/#skills' },
+  { label: 'Beyond Code', href: '/#beyond' },
+  { label: 'Contact', href: '/#contact' }
+] as const
 
 export default function Header() {
-  const [dark, setDark] = useState(true) // default = dark
+  const [dark, setDark] = useState(true)
+  const pathname = usePathname()
 
   useEffect(() => {
     try {
       const saved = localStorage.getItem('theme')
-      const isDark = saved ? saved === 'dark' : true // prefer dark by default
+      const isDark = saved ? saved === 'dark' : true
       document.documentElement.classList.toggle('dark', isDark)
       setDark(isDark)
     } catch {}
@@ -21,25 +32,35 @@ export default function Header() {
   }
 
   return (
-    <header className="sticky top-0 z-50 backdrop-blur border-b border-slate-200/60 dark:border-slate-800/60 bg-white/65 dark:bg-slate-950/50">
-      <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-        <a href="#" className="font-semibold tracking-tight text-slate-800 dark:text-slate-100">
-          Laith M. alkhalil-AlHamed<span className="text-brand"></span>
+    <header className="sticky top-0 z-50 border-b border-slate-200/60 bg-white/65 backdrop-blur dark:border-slate-800/60 dark:bg-slate-950/50">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+        <a href="/" className="font-semibold tracking-tight text-slate-800 dark:text-slate-100">
+          Laith M. alkhalil-AlHamed
         </a>
-        <nav className="hidden md:flex gap-6 text-sm text-slate-600 dark:text-slate-300">
-          <a href="#projects" className="hover:text-brand">Projects</a>
-          <a href="#experience" className="hover:text-brand">Experience</a>
-          <a href="#skills" className="hover:text-brand">Skills</a>
-          <a href="#beyond" className="hover:text-brand">Beyond Code</a>
-          <a href="#contact" className="hover:text-brand">Contact</a>
+
+        <nav className="hidden gap-6 text-sm text-slate-600 dark:text-slate-300 md:flex">
+          {NAV_ITEMS.map((item) => {
+            const isActive = item.href === '/research' && pathname === '/research'
+
+            return (
+              <a
+                key={item.label}
+                href={item.href}
+                className={isActive ? 'text-brand' : 'hover:text-brand'}
+              >
+                {item.label}
+              </a>
+            )
+          })}
         </nav>
+
         <button
           onClick={toggle}
-          className="text-xs px-3 py-1.5 rounded-full border border-slate-300 dark:border-slate-700 hover:border-brand/60"
+          className="rounded-full border border-slate-300 px-3 py-1.5 text-xs hover:border-brand/60 dark:border-slate-700"
           aria-label="Toggle theme"
           title="Toggle theme"
         >
-          {dark ? '☀︎' : '☾'}
+          {dark ? 'Light' : 'Dark'}
         </button>
       </div>
     </header>

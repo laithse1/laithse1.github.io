@@ -32,7 +32,7 @@ Showcases projects, experience, skills, and a **“Life Beyond Code”** gallery
 ## 📬 Contact
 
 * **GitHub:** [Github](https://github.com/laithse1)
-* **LinkedIn:** [Laith Alkhalil](https://www.linkedin.com/in/laith-alkhalil-alhamed-6aa15a82/)
+* **LinkedIn:** [Laith Alkhalil](https://www.linkedin.com/in/laith-a-6aa15a82/)
 
 ---
 

@@ -28,18 +28,24 @@ export default function Page() {
 
       {/* PROJECTS */}
       <section id="projects" className="max-w-6xl mx-auto px-4 py-12">
-        <div className="flex items-end justify-between mb-6">
-          <h2 className="text-2xl font-bold">Featured Projects</h2>
+        <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <div className="mb-2 text-xs font-semibold uppercase tracking-[0.24em] text-brand">Selected work</div>
+            <h2 className="text-3xl font-bold tracking-tight">Featured Projects</h2>
+            <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-600 dark:text-slate-300">
+              A cross-domain portfolio spanning AI platforms, healthcare systems, computer vision, and responsible ML research.
+            </p>
+          </div>
           <a
             href={`https://github.com/stars/laithse1/lists/my-projects`}
-            className="text-sm hover:text-brand"
+            className="shrink-0 text-sm font-medium hover:text-brand"
             target="_blank"
             rel="noopener noreferrer"
           >
             More projects →
           </a>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid gap-6 sm:grid-cols-2">
           {PROJECTS.map((p, i) => (
             <ProjectCard key={i} p={p as any} />
           ))}

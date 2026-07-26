@@ -31,6 +31,11 @@
 npm i
 npm run dev
 # open http://localhost:3000
+
+
+# Stop any existing dev server with Ctrl+C first
+Remove-Item .next -Recurse -Force
+npm run dev
 ```
 
 ### Build static & preview the export

@@ -3,61 +3,49 @@ import { SITE } from '../data/site.config'
 
 export default function Hero() {
   return (
-    <section className="max-w-6xl mx-auto px-4 pt-16 pb-10">
-      <div className="grid md:grid-cols-12 items-center gap-10">
+    <section className="mx-auto max-w-6xl px-4 pb-14 pt-14 md:pb-20 md:pt-20">
+      <div className="grid items-center gap-12 md:grid-cols-12">
         <div className="md:col-span-7">
-          {/*<div className="inline-flex items-center gap-2 text-brand text-xs font-semibold border border-brand/30 rounded-full px-3 py-1 mb-4">
-            <span>Software Engineer • FullStack</span>
-          </div>*/}
-          <h1 className="text-4xl/tight md:text-5xl/tight font-bold">
-            Engineering Scalable Solutions that Shape the Future of Digital Experiences
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-brand/25 bg-brand/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+            Software engineer · AI & healthcare systems
+          </div>
+          <h1 className="max-w-3xl text-4xl font-bold leading-[1.08] tracking-tight md:text-6xl">
+            Building reliable software for complex, real-world problems.
           </h1>
-          {/*<p className="mt-4 text-slate-600 dark:text-slate-300">
-            I design and develop software that solve real-world problems.
-            From responsive frontends to scalable backends, I bring your digital vision to life —
-            with deep experience in healthcare imaging, DICOM/DICOMWeb, and OHIF.
-          </p>*/}
-          <div className="mt-6 flex flex-wrap gap-3">
-           {/*} <a href="#projects" className="px-5 py-2.5 rounded-xl bg-brand text-white hover:bg-brand/90">View Projects</a>
-            <a href="#beyond" className="px-5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700">Beyond Code</a>*/}
-            {/*<a href={`mailto:${SITE.email}`} className="px-5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700">Email Me</a>*/}
+          <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 dark:text-slate-300 md:text-lg">
+            I design and build full-stack platforms across enterprise systems, healthcare imaging, applied AI, and
+            research tooling—with a focus on clarity, resilience, and measurable impact.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+           {/*} <a href="#projects" className="rounded-xl bg-brand px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-brand/90">
+              View selected work
+            </a>*/}
+          {/*} <a href={`mailto:${SITE.email}`} className="rounded-xl border border-slate-300 px-5 py-2.5 text-sm font-semibold transition hover:border-brand/60 dark:border-slate-700">
+              Get in touch
+           </a>*/}
+          </div>
+          <div className="mt-8 grid max-w-2xl gap-3 text-sm text-slate-600 dark:text-slate-300 sm:grid-cols-3">
+            <div><span className="font-semibold text-slate-900 dark:text-slate-100">Full-stack</span><br />APIs to interfaces</div>
+            <div><span className="font-semibold text-slate-900 dark:text-slate-100">Platform-minded</span><br />Secure and scalable</div>
+            <div><span className="font-semibold text-slate-900 dark:text-slate-100">Research-aware</span><br />Reproducible systems</div>
           </div>
         </div>
+
         <div className="md:col-span-5">
-          <div className="relative">
-            <div className="absolute -inset-1 rounded-3xl bg-gradient-to-tr from-brand/40 to-purple-500/40 blur"></div>
-            <div className="relative rounded-3xl p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl">
-              <img src="/images/Photo.jpg" alt="Laith Alkhalil"
-                   className="w-full aspect-[4/5] object-cover rounded-2xl ring-1 ring-slate-200 dark:ring-slate-800" />
-              <ul className="mt-4 space-y-2 text-sm">
-                <li className="space-y-2">
-  <div className="font-semibold">
-    Full-Stack Software Engineer · Scalable, user-focused solutions
-  </div>
-  <p className="text-sm text-slate-600 dark:text-slate-300">
- I engineer full-stack software solutions that create measurable business value. From sleek,
-  responsive frontends to resilient, scalable backends, 
-  I deliver applications that elevate user experience and streamline operations.
-   My expertise spans cloud-native architectures, API-driven platforms, 
-   and interoperability standards —
-  complemented by specialized knowledge in healthcare imaging, including DICOM/DICOMWeb.
-  </p>
-  <p className="text-sm text-slate-600 dark:text-slate-300">
-    Previously at <span className="font-medium">FedEx</span>,
-    the world’s 
-    largest logistics and cargo airline, 
-    I was part of an agile development team 
-    supporting and modernizing an enterprise document management system, 
-    ensuring reliability and scalability 
-    for mission-critical global operations.
-  </p>
-</li>
-                {/*<li>🔒 Security-minded: CWE-73 mitigations, OAuth2/JWT, TLS</li>
-                <li>🖼 DICOMWeb (QIDO/WADO-RS), OHIF integration</li>
-                <li>⚙️ CI/CD on Azure DevOps & GitHub Actions</li>
-                <li>🐳 Dockerized microservices across multi-VM fleets</li>
-                <li>📈 Monitoring: Splunk, AppDynamics</li>*/}
-              </ul>
+          <div className="relative mx-auto max-w-md">
+            <div className="absolute -inset-1 rounded-[2rem] bg-gradient-to-tr from-brand/40 to-purple-500/40 blur" />
+            <div className="relative rounded-[2rem] border border-slate-200 bg-white p-4 shadow-xl dark:border-slate-800 dark:bg-slate-900">
+              <img
+                src="/images/Photo.jpg"
+                alt="Laith Alkhalil"
+                className="aspect-[4/5] w-full rounded-2xl object-cover object-center ring-1 ring-slate-200 dark:ring-slate-800"
+              />
+              <div className="mt-4 rounded-2xl border border-slate-200/70 bg-slate-50/80 p-4 dark:border-slate-800/70 dark:bg-slate-950/60">
+                <div className="text-sm font-semibold">Engineering with context</div>
+                <p className="mt-1 text-sm leading-6 text-slate-600 dark:text-slate-300">
+                  Experience spanning clinical imaging, enterprise platforms, cloud services, and applied machine learning.
+                </p>
+              </div>
             </div>
           </div>
         </div>

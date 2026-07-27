@@ -47,3 +47,21 @@ export const RESEARCH_PROJECT = {
   ],
   repoUrl: 'https://github.com/laithse1/kinship-verification-toolkit'
 } as const
+
+export const RESEARCH_IN_PROGRESS = {
+  title: 'Accessible Maps: Deterministic Geospatial Tool Use for LLM Map QA',
+  subtitle: 'Current research collaboration · Georgia Tech Sonification Lab',
+  summary:
+    'A research prototype for accessible map question answering. An LLM translates natural-language questions into structured plans, while deterministic GeoPandas and Shapely tools perform the spatial reasoning and produce auditable traces.',
+  researchQuestion:
+    'Can language models handle question decomposition while deterministic geospatial tools handle exact topology, distance, direction, and thematic reasoning?',
+  milestone:
+    'The current evaluation suite studies generalization across map types, question families, planner models, and external benchmarks.',
+  metrics: [
+    { value: '90.3%', label: 'Evaluation 1' },
+    { value: '95.3%', label: 'Evaluation 3' },
+    { value: '3,154', label: 'MapQA questions' }
+  ],
+  focusAreas: ['Geospatial Computing', 'MCP', 'GeoPandas + Shapely', 'LLM Evaluation', 'Accessible Map QA'],
+  repoUrl: 'https://github.gatech.edu/SonificationLab/geospatial-mcp-server'
+} as const

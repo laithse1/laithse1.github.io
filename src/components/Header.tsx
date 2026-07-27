@@ -33,12 +33,12 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/60 bg-white/65 backdrop-blur dark:border-slate-800/60 dark:bg-slate-950/50">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        <a href="/" className="font-semibold tracking-tight text-slate-800 dark:text-slate-100">
+      <div className="mx-auto flex max-w-6xl items-center gap-5 px-4 py-3">
+        <a href="/" className="shrink-0 font-semibold tracking-tight text-slate-800 dark:text-slate-100">
           Laith M. alkhalil-AlHamed
         </a>
 
-        <nav className="hidden gap-6 text-sm text-slate-600 dark:text-slate-300 md:flex">
+        <nav className="scrollbar-hide flex min-w-0 flex-1 justify-end gap-4 overflow-x-auto text-xs text-slate-600 dark:text-slate-300 sm:gap-6 sm:text-sm">
           {NAV_ITEMS.map((item) => {
             const isActive = item.href === '/research' && pathname === '/research'
 
@@ -56,7 +56,7 @@ export default function Header() {
 
         <button
           onClick={toggle}
-          className="rounded-full border border-slate-300 px-3 py-1.5 text-xs hover:border-brand/60 dark:border-slate-700"
+          className="shrink-0 rounded-full border border-slate-300 px-3 py-1.5 text-xs hover:border-brand/60 dark:border-slate-700"
           aria-label="Toggle theme"
           title="Toggle theme"
         >

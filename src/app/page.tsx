@@ -8,7 +8,6 @@ import { EXPERIENCE } from '../data/experience'
 import { SKILLS } from '../data/skills'
 import { SITE } from '../data/site.config'
 import { GALLERY } from '../data/gallery'
-import { RESEARCH_PROJECT, RESEARCH_PUBLICATION } from '../data/research'
 import QuadAutoGallery from '../components/QuadAutoGallery'
 
 // Distribute the flat GALLERY into 4 columns (round-robin), copying each item
@@ -52,7 +51,9 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-4 py-12">
+      {/* Research is presented on the dedicated /research page. */}
+      {/*
+        <section className="max-w-6xl mx-auto px-4 py-12">
         <div className="relative overflow-hidden rounded-[2rem] border border-slate-200/70 bg-white/85 shadow-[0_30px_120px_-50px_rgba(37,99,235,0.45)] dark:border-slate-800/80 dark:bg-slate-900/65">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(59,130,246,0.18),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(16,185,129,0.16),transparent_28%)]" />
           <div className="relative grid gap-8 px-6 py-8 md:grid-cols-[1.2fr_0.8fr] md:px-10 md:py-10">
@@ -64,10 +65,9 @@ export default function Page() {
                 Research portfolio built for PhD outreach
               </h2>
               <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600 dark:text-slate-300 md:text-base">
-                My current research project centers on kinship verification, reproducible experimentation, and
-                dataset-centered evaluation, while my broader PhD interests remain open across software engineering and
-                computer science. The toolkit and manuscript below are designed to be easy to share with faculty
-                evaluating research fit, technical depth, and long-term potential.
+                My current research work spans kinship verification and accessible map question answering, with a shared
+                focus on reproducible experimentation, deterministic tooling, and evaluation. The research page brings
+                these projects, papers, and broader interests together for faculty and collaborators.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-3">
@@ -112,19 +112,16 @@ export default function Page() {
                   </p>
                 </div>
                 <div className="rounded-[1.6rem] border border-slate-200/70 bg-slate-50/90 p-5 dark:border-slate-800/70 dark:bg-slate-950/60">
-                  <div className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">
-                    Why it matters
-                  </div>
-                  <p className="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-300">
-                    The work is positioned for PhD outreach: reproducible code, clear problem framing, and a manuscript
-                    professors can review quickly.
-                  </p>
+                  <div className="text-xs font-semibold uppercase tracking-[0.2em] text-brand">Research portfolio</div>
+                  <div className="mt-2 font-semibold">Projects, papers, and research directions</div>
+                  <p className="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-300">Explore current work in reproducible machine learning, computer vision, and research software.</p>
+                  <a href="/research" className="mt-3 inline-block text-sm font-semibold text-brand hover:underline">Explore research</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* EXPERIENCE */}
       <section id="experience" className="max-w-6xl mx-auto px-4 py-12">
